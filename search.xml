@@ -15,6 +15,33 @@
     </entry>
     
     
+    
+    <entry>
+      <title>博客测试</title>
+      <link href="/2018/09/07/my-first-post/"/>
+      <url>/2018/09/07/my-first-post/</url>
+      
+        <content type="html"><![CDATA[<p><strong>这是一个测试</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>

@@ -37,4 +37,32 @@
     
   </entry>
   
+  <entry>
+    <title>博客测试</title>
+    <link href="https://zws123.github.io/2018/09/07/my-first-post/"/>
+    <id>https://zws123.github.io/2018/09/07/my-first-post/</id>
+    <published>2018-09-07T01:25:00.000Z</published>
+    <updated>2021-09-24T08:04:56.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;这是一个测试&lt;/strong&gt;&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://zws123.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="https://zws123.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://zws123.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
 </feed>
