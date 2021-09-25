@@ -393,13 +393,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一步-GitHub创建仓库"><a href="#第一步-GitHub创建仓库" class="headerlink" title="第一步 GitHub创建仓库"></a>第一步 GitHub创建仓库</h2><pre><code>        *  GitHub新建仓库，仓库的名称格式为`你的用户名.github.io`，这点很重要，不然部署不上去。主要参考[使用Hexo和Github搭建博客](https://huahuipj.github.io/2021/08/20/shi-yong-github-bu-shu-yi-ge-jian-dan-de-bo-ke/)。
-        *  由于我在同一台电脑上需要同时使用GitHub和Gitee，所以参考[如何在一台电脑上同时使用Gitee（码云）和Github？](https://zhuanlan.zhihu.com/p/78978851)配置了一下，然后采用git clone xxx.git    git add  xxx.py    git push方式测试， 有一点需要注意：密码需替换成access token：如何创建参考[创建个人访问令牌](https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)。
+                <h2 id="第一步-GitHub创建仓库"><a href="#第一步-GitHub创建仓库" class="headerlink" title="第一步 GitHub创建仓库"></a>第一步 GitHub创建仓库</h2><pre><code>        1. GitHub新建仓库，仓库的名称格式为`你的用户名.github.io`，这点很重要，不然部署不上去。主要参考[使用Hexo和Github搭建博客](https://huahuipj.github.io/2021/08/20/shi-yong-github-bu-shu-yi-ge-jian-dan-de-bo-ke/)。
+           2. 由于我在同一台电脑上需要同时使用GitHub和Gitee，所以参考[如何在一台电脑上同时使用Gitee（码云）和Github？](https://zhuanlan.zhihu.com/p/78978851)配置了一下，然后采用git clone xxx.git    git add  xxx.py    git push方式测试， 有一点需要注意：密码需替换成access token：如何创建参考[创建个人访问令牌](https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)。
 </code></pre>
-<h2 id="第二步-安装nodejs和Hexo"><a href="#第二步-安装nodejs和Hexo" class="headerlink" title="第二步 安装nodejs和Hexo"></a>第二步 安装<code>nodejs</code>和<code>Hexo</code></h2><pre><code>        *  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-        *  安装Hexo之前需要先按照安装 Node.js，参考[官方文档](https://hexo.io/zh-cn/docs/)的安装 Node.js部分，我直接下载的Node.js镜像进行安装，果然出现了`EACCES` 权限错误，如下图：
-        *  按照[由 npmjs 发布的指导](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)修复该问题，我选择的第二种方式Manually change npm's default directory，按照步骤进行即可修复。
-        *  接下来就是安装`Hexo`，首先在磁盘建立一个文件夹 `Blog`，终端`cd Blog`，依次执行`npm install -g hexo-cli`按照Hexo，`hexo init`初始化博客，`hexo g`生成静态文件，`hexo s`部署博客，浏览器输入 `http://localhost:4000` 就可以打开新部署的网页。
+<h2 id="第二步-安装nodejs和Hexo"><a href="#第二步-安装nodejs和Hexo" class="headerlink" title="第二步 安装nodejs和Hexo"></a>第二步 安装<code>nodejs</code>和<code>Hexo</code></h2><pre><code>            1. Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+               2. 安装Hexo之前需要先按照安装 Node.js，参考[官方文档](https://hexo.io/zh-cn/docs/)的安装 Node.js部分，我直接下载的Node.js镜像进行安装，果然出现了`EACCES` 权限错误，如下图：
+               3. 按照[由 npmjs 发布的指导](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)修复该问题，我选择的第二种方式Manually change npm's default directory，按照步骤进行即可修复。
+               4. 接下来就是安装`Hexo`，首先在磁盘建立一个文件夹 `Blog`，终端`cd Blog`，依次执行`npm install -g hexo-cli`按照Hexo，`hexo init`初始化博客，`hexo g`生成静态文件，`hexo s`部署博客，浏览器输入 `http://localhost:4000` 就可以打开新部署的网页。
 </code></pre>
 <h2 id="第三步-将Hexo部署到GitHub"><a href="#第三步-将Hexo部署到GitHub" class="headerlink" title="第三步 将Hexo部署到GitHub"></a>第三步 将<code>Hexo</code>部署到<code>GitHub</code></h2><p>​        现在回到我们的 <code>Blog</code> 文件夹，用记事本打开 <code>_config.yml</code> 文件，将文件底部分部分替换成</p>
 <pre class="line-numbers language-none"><code class="language-none">deploy:
@@ -454,7 +454,7 @@ hexo d <span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zws123.github.io/2021/09/24/mac-huan-jing-shi-yong-hexo-he-github-da-jian-bo-ke/">https://zws123.github.io/2021/09/24/mac-huan-jing-shi-yong-hexo-he-github-da-jian-bo-ke/</a>
+                    <a href="https://zws123.github.io/2021/09/24/mac-xi-tong-shi-yong-hexo-he-github-da-jian-bo-ke/">https://zws123.github.io/2021/09/24/mac-xi-tong-shi-yong-hexo-he-github-da-jian-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -674,7 +674,7 @@ hexo d <span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/09/24/mac-huan-jing-shi-yong-hexo-he-github-da-jian-bo-ke/">
+                <a href="/2021/09/24/mac-xi-tong-shi-yong-hexo-he-github-da-jian-bo-ke/">
                     <div class="card-image">
                         
                         
